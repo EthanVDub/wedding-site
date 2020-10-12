@@ -156,8 +156,9 @@ const Faq = () => {
               </AccordionSummary>
               <AccordionDetails>
                 <p>
-                  Pictures are encouraged! We will have a hashtag for the event
-                  that will be posted here and at the venue.
+                  As long as you are respectful of the photographer, pictures
+                  are encouraged! We will have a hashtag for the event that will
+                  be posted here and at the venue.
                 </p>
               </AccordionDetails>
             </Accordion>

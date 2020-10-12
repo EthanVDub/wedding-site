@@ -6,6 +6,7 @@ const StyledHeader = styled.div`
   position: sticky;
   top: 0;
   display: flex;
+  z-index: 2000;
   color: #333333;
   justify-content: space-between;
   padding: 1em 20%;

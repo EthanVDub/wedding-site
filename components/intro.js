@@ -53,6 +53,12 @@ const StyledInfo = styled.div`
       serif;
   }
 
+  @media (max-width: 1100px) {
+    h1 {
+      margin: auto;
+    }
+  }
+
   @media (max-width: 768px) {
     display: block;
 

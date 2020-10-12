@@ -2,6 +2,11 @@ import styled from "styled-components";
 import holiday from "../static/Holiday.jpg";
 import Button from "./button";
 import Link from "next/link";
+import Accordion from "@material-ui/core/Accordion";
+import AccordionSummary from "@material-ui/core/AccordionSummary";
+import AccordionDetails from "@material-ui/core/AccordionDetails";
+import Typography from "@material-ui/core/Typography";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const StyledLodging = styled.div`
   display: flex;
@@ -19,7 +24,7 @@ const StyledLodging = styled.div`
     letter-spacing: 0.2em;
     margin-bottom: 0.3em;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1100px) {
     padding: 2em 0;
     flex-direction: column;
     img {
@@ -28,14 +33,18 @@ const StyledLodging = styled.div`
   }
 `;
 
+const StyledDropDown = styled.div`
+  margin: 5% 15%;
+`;
+
 const StyledItem = styled.div`
   flex-grow: 1;
   flex-basis: 0;
 
   margin: auto;
   img {
-    width: 55%;
-    height: 55%;
+    width: 75%;
+    height: 75%;
     border-radius: 5%;
     margin: 10% 0%;
   }
@@ -53,11 +62,25 @@ const StyledItem = styled.div`
     font-family: brandon-grotesque, "Brandon Grotesque", Futura, sans-serif;
     color: white;
   }
-  @media (max-width: 768px) {
+
+  ul {
+    list-style: none;
+    text-align: left;
+    font-size: 1em;
+    font-family: brandon-grotesque, "Brandon Grotesque", Futura, sans-serif;
+    color: #eabf8b;
+    padding: 0;
+  }
+
+  .details {
+    color: #eabf8b;
+  }
+  @media (max-width: 1100px) {
       h1 {
           margin-top: 0;
       }
     img {
+      width: 55%;
       margin: 1em 0;
     }
 `;
@@ -71,11 +94,37 @@ const Lodging = () => (
       <h1>LODGING</h1>
       <span class="underline"></span>
       <p>
-        We reserved rooms from the <br /> Holiday Inn & Suites <br /> that is
-        connected
-        <br /> to the event center.
-        <br /> Simply call ahead and say <br /> you are coming
-        <br /> for our wedding!
+        We reserved rooms from the Holiday Inn & Suites that is connected to the
+        event center. Simply call ahead and say you are coming to the Vander
+        Wiel wedding!
+        <StyledDropDown>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon style={{ color: "#eabf8b" }} />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              color="#eabf8b"
+            >
+              <div className="details">Hotel Room Details</div>
+            </AccordionSummary>
+            <AccordionDetails>
+              <ul>
+                <li>
+                  <b>Room Types:</b> Two Queen Beds or King with Sofa
+                </li>
+                <li>
+                  <b>Rental Dates:</b> 5/20, 5/21, 5/22
+                </li>
+                <li>
+                  <b>Cost:</b> $125/night
+                </li>
+                <li>
+                  <b>Hotel Number:</b> (888)-465-4329
+                </li>
+              </ul>
+            </AccordionDetails>
+          </Accordion>
+        </StyledDropDown>
       </p>
       <Link href="https://www.ihg.com/holidayinn/hotels/us/en/cedar-falls/alocf/hoteldetail">
         <Button> SITE </Button>
