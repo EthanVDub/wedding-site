@@ -50,7 +50,7 @@ const StyledItem = styled.div`
 
   .contacts {
     margin-top: 3%;
-    margin-bottom: 17%;
+    margin-bottom: 27%;
   }
 
   p {
