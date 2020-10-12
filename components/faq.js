@@ -173,10 +173,7 @@ const Faq = () => {
                 <h2>How will COVID-19 affect the event?</h2>
               </AccordionSummary>
               <AccordionDetails>
-                <p>
-                  We have not made any COVID related decisions yet as our
-                  wedding is still a long ways off.
-                </p>
+                <p>We have not made any COVID related decisions yet.</p>
               </AccordionDetails>
             </Accordion>
           </StyledItem>

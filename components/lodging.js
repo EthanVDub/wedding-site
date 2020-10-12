@@ -118,7 +118,7 @@ const Lodging = () => (
                   <b>Cost:</b> $125/night
                 </li>
                 <li>
-                  <b>Hotel Number:</b> (888)-465-4329
+                  <b>Hotel Number:</b> (319)-260-2600
                 </li>
               </ul>
             </AccordionDetails>
