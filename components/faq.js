@@ -103,13 +103,11 @@ const Faq = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <h2>What questions should go in these spots?</h2>
+                <h2>What is the dress code for the event?</h2>
               </AccordionSummary>
               <AccordionDetails>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                  We encourage you to wear casual clothes during the wedding!
                 </p>
               </AccordionDetails>
             </Accordion>
@@ -121,14 +119,10 @@ const Faq = () => {
                 aria-controls="panel2a-content"
                 id="panel2a-header"
               >
-                <h2>How do you get to the hotel from Ames?</h2>
+                <h2>Are kids allowed at the wedding?</h2>
               </AccordionSummary>
               <AccordionDetails>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </p>
+                <p>Yes! We want to see the whole family.</p>
               </AccordionDetails>
             </Accordion>
           </StyledItem>
@@ -139,10 +133,13 @@ const Faq = () => {
                 aria-controls="panel3a-content"
                 id="panel3a-header"
               >
-                <h2>What is the name of the Bride and Groom?</h2>
+                <h2>Will weather affect the event at all?</h2>
               </AccordionSummary>
               <AccordionDetails>
-                <p>Seriously?</p>
+                <p>
+                  The entire event will take place indoors in the event center
+                  connected to the hotel. You should never need to go outside.
+                </p>
               </AccordionDetails>
             </Accordion>
           </StyledItem>
@@ -155,13 +152,12 @@ const Faq = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <h2>What questions should go in these spots?</h2>
+                <h2>Can we post pictures on social media of the wedding?</h2>
               </AccordionSummary>
               <AccordionDetails>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                  Pictures are encouraged! We will have a hashtag for the event
+                  that will be posted here and at the venue.
                 </p>
               </AccordionDetails>
             </Accordion>
@@ -173,13 +169,12 @@ const Faq = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <h2>What questions should go in these spots?</h2>
+                <h2>How will COVID-19 affect the event?</h2>
               </AccordionSummary>
               <AccordionDetails>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                  We have not made any COVID related decisions yet as our
+                  wedding is still a long ways off.
                 </p>
               </AccordionDetails>
             </Accordion>
@@ -191,14 +186,13 @@ const Faq = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <h2>What questions should go in these spots?</h2>
+                <h2>
+                  What are the names of the bride and groom?
+                  <br />
+                </h2>
               </AccordionSummary>
               <AccordionDetails>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </p>
+                <p>Seriously?</p>
               </AccordionDetails>
             </Accordion>
           </StyledItem>
