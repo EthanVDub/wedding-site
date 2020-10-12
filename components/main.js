@@ -5,6 +5,7 @@ import Lodging from "./lodging";
 import Faq from "./faq";
 import RSVP from "./rsvp";
 import styled from "styled-components";
+import Contact from "./contact";
 
 const StyledMain = styled.div`
   display: flex;
@@ -23,6 +24,9 @@ const Main = () => (
     </section>
     <section id="FAQ">
       <Faq />
+    </section>
+    <section id="contact">
+      <Contact />
     </section>
     <section id="RSVP">
       <RSVP />

@@ -21,8 +21,7 @@ const StyledLodging = styled.div`
     font-weight: 500;
     font-size: 3em;
     font-family: brandon-grotesque, "Brandon Grotesque", Futura, sans-serif;
-    letter-spacing: 0.2em;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.2em;
   }
   @media (max-width: 1100px) {
     padding: 2em 0;
