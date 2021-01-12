@@ -93,9 +93,9 @@ const Lodging = () => (
       <h1>LODGING</h1>
       <span class="underline"></span>
       <p>
-        We reserved rooms from the Holiday Inn & Suites that is connected to the
-        event center. Simply call ahead and say you are coming to the Vander
-        Wiel wedding!
+        We have a block of rooms at the Holiday Inn & Suites that is connected
+        to the event center. Simply use the link below or call ahead and say
+        you're coming to the Vander Wiel wedding!
         <StyledDropDown>
           <Accordion>
             <AccordionSummary
@@ -126,7 +126,7 @@ const Lodging = () => (
         </StyledDropDown>
       </p>
       <Link href="https://www.ihg.com/holidayinn/hotels/us/en/cedar-falls/alocf/hoteldetail?fromRedirect=true&qSrt=sBR&qIta=99801505&icdv=99801505&qSlH=ALOCF&qGrpCd=VAN&setPMCookies=true&qSHBrC=HI&qDest=7400%20Hudson%20Road,%20Cedar%20Falls,%20IA,%20US&srb_u=1">
-        <Button> SITE </Button>
+        <Button> RESERVE </Button>
       </Link>
     </StyledItem>
   </StyledLodging>
