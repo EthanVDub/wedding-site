@@ -125,7 +125,7 @@ const Lodging = () => (
           </Accordion>
         </StyledDropDown>
       </p>
-      <Link href="https://www.ihg.com/holidayinn/hotels/us/en/cedar-falls/alocf/hoteldetail">
+      <Link href="https://www.ihg.com/holidayinn/hotels/us/en/cedar-falls/alocf/hoteldetail?fromRedirect=true&qSrt=sBR&qIta=99801505&icdv=99801505&qSlH=ALOCF&qGrpCd=VAN&setPMCookies=true&qSHBrC=HI&qDest=7400%20Hudson%20Road,%20Cedar%20Falls,%20IA,%20US&srb_u=1">
         <Button> SITE </Button>
       </Link>
     </StyledItem>

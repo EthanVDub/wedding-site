@@ -86,6 +86,7 @@ const Pane = () => (
     <Link href="https://www.ihg.com/holidayinn/hotels/us/en/cedar-falls/alocf/hoteldetail">
       <RSVPButton> NEXT </RSVPButton>
     </Link>
+    <p>This part of the site is not ready for use yet!</p>
   </StyledPane>
 );
 
