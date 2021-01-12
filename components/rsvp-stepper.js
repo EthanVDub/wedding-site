@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bw from "../static/BWCute.jpg";
+import bw from "../static/Bwcute.jpg";
 import Pane from "./pane";
 
 const StyledRSVPStepper = styled.div`
