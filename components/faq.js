@@ -93,7 +93,7 @@ const Faq = () => {
   return (
     <StyledFaq>
       <h1>FAQ</h1>
-      <span class="underline"></span>
+      <span className="underline"></span>
       <StyledItem>
         <StyledSection>
           <StyledItem>
@@ -107,7 +107,7 @@ const Faq = () => {
               </AccordionSummary>
               <AccordionDetails>
                 <p>
-                  We encourage you to wear casual clothes during the wedding!
+                  We encourage you to dress in wedding casual for the event!
                 </p>
               </AccordionDetails>
             </Accordion>

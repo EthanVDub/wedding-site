@@ -74,7 +74,7 @@ const Intro = () => (
       <h1>
         ethan <br />&<br /> delaney
       </h1>
-      <p class="byline"> MAY 22, 2021 </p>
+      <p className="byline"> MAY 22, 2021 </p>
     </StyledInfo>
     <StyledInfo>
       <img src={cute} />

@@ -34,9 +34,9 @@ const StyledRSVP = styled.div`
 const RSVP = () => (
   <StyledRSVP>
     <h1>RSVP</h1>
-    <span class="underline"></span>
+    <span className="underline"></span>
     <p>You will be able to RSVP through this site once we are ready!</p>
-    <p class="byline"> Site designed and created by the Groom </p>
+    <p className="byline"> Site designed and created by the Groom </p>
   </StyledRSVP>
 );
 

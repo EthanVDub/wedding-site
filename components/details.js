@@ -65,14 +65,14 @@ const Details = () => (
     <StyledItem>
       <img src={calendar} />
       <h1>WHEN</h1>
-      <span class="underline"></span>
+      <span className="underline"></span>
       <h3>MAY 22, 2021</h3>
       <h2>A SATURDAY</h2>
     </StyledItem>
     <StyledItem>
       <img src={location} />
       <h1>WHERE</h1>
-      <span class="underline"></span>
+      <span className="underline"></span>
       <h3>Cedar Falls, IA</h3>
       <h2>BIEN VENU EVENT CENTER</h2>
     </StyledItem>

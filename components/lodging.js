@@ -91,7 +91,7 @@ const Lodging = () => (
     </StyledItem>
     <StyledItem>
       <h1>LODGING</h1>
-      <span class="underline"></span>
+      <span className="underline"></span>
       <p>
         We have a block of rooms at the Holiday Inn & Suites that is connected
         to the event center. Simply use the link below or call ahead and say

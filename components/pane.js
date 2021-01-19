@@ -64,7 +64,7 @@ const StyledResponseBox = styled.div`
 const Pane = () => (
   <StyledPane>
     <h1>RSVP</h1>
-    <span class="underline"></span>
+    <span className="underline"></span>
     <StyledResponseBox>
       <p>Your email address:</p>
       <input

@@ -77,11 +77,11 @@ const StyledItem = styled.div`
 const Contact = () => (
   <StyledContact>
     <h1>CONTACT</h1>
-    <span class="underline"></span>
+    <span className="underline"></span>
     <StyledSection>
       <StyledItem>
         <h1>Bride</h1>
-        <span class="underline"></span>
+        <span className="underline"></span>
         <div className="contacts">
           <p>Delaney Schaffner</p>
           <p>309-738-8106</p>
@@ -94,7 +94,7 @@ const Contact = () => (
       </StyledItem>
       <StyledItem>
         <h1>Groom</h1>
-        <span class="underline"></span>
+        <span className="underline"></span>
         <div className="contacts">
           <p>Ethan Vander Wiel</p>
           <p>319-429-4908</p>
