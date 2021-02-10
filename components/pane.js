@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import RSVPButton from "./rsvp-button";
 import Link from "next/link";
+import { useState } from "react";
 
 const StyledPane = styled.div`
   display: flex;
@@ -61,33 +62,56 @@ const StyledResponseBox = styled.div`
   }
 `;
 
-const Pane = () => (
-  <StyledPane>
-    <h1>RSVP</h1>
-    <span className="underline"></span>
-    <StyledResponseBox>
-      <p>Your email address:</p>
-      <input
-        type="text"
-        id="email"
-        name="email"
-        placeholder="Email address.."
-      />
-      <br />
-      <p>Number in your party:</p>
-      <select id="party" name="party">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-    </StyledResponseBox>
-    <Link href="https://www.ihg.com/holidayinn/hotels/us/en/cedar-falls/alocf/hoteldetail">
-      <RSVPButton> NEXT </RSVPButton>
-    </Link>
-    <p>This part of the site is not ready for use yet!</p>
-  </StyledPane>
-);
+const Pane = () => {
+  const [email, setEmail] = useState("");
+  const [party, setParty] = useState(1);
+  const [stepper, setStepper] = useState(0);
+
+  console.log(party);
+  console.log(email);
+  console.log(stepper);
+
+  if (stepper === 0) {
+    return (
+      <StyledPane>
+        <h1>RSVP</h1>
+        <span className="underline"></span>
+        <StyledResponseBox>
+          <p>Your email address:</p>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email address.."
+            onChange={() => setEmail(event.target.value)}
+          />
+          <br />
+          <p>Number in your party:</p>
+          <select
+            id="party"
+            name="party"
+            onChange={() => setParty(event.target.value)}
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </StyledResponseBox>
+        <RSVPButton onClick={() => setStepper(1)}> NEXT </RSVPButton>
+      </StyledPane>
+    );
+  } else {
+    return (
+      <StyledPane>
+        <h1>RSVP</h1>
+        <span className="underline"></span>
+        {email}
+        {party}
+      </StyledPane>
+    );
+  }
+};
 
 export default Pane;

@@ -4,6 +4,7 @@ import Details from "./details";
 import Lodging from "./lodging";
 import Faq from "./faq";
 import RSVP from "./rsvp";
+import Registry from "./registry";
 import styled from "styled-components";
 import Contact from "./contact";
 
@@ -24,6 +25,9 @@ const Main = () => (
     </section>
     <section id="FAQ">
       <Faq />
+    </section>
+    <section id="registry">
+      <Registry />
     </section>
     <section id="contact">
       <Contact />
