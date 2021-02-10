@@ -42,6 +42,9 @@ const Header = () => (
       <a href="#FAQ">FAQ</a>
     </StyledItem>
     <StyledItem>
+      <a href="#registry">REGISTRY</a>
+    </StyledItem>
+    <StyledItem>
       <a href="#contact">CONTACT</a>
     </StyledItem>
     <StyledItem>
