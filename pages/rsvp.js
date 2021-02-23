@@ -5,9 +5,15 @@ const Rsvp = () => (
   <>
     <Head>
       <title>E&D</title>
-      <link rel="icon" href="/ring.ico" />
+      <link rel="icon" href="../static/ring.ico" />
     </Head>
-    <RSVPStepper />
+    <RSVPStepper>
+<style jsx global>{`
+        body {
+          margin: 0;
+        }
+      `}</style>
+    </RSVPStepper>
   </>
 );
 

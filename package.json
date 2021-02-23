@@ -10,6 +10,9 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
+    "dotenv": "^8.2.0",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.4",
     "next": "^10.0.5",
     "next-images": "^1.4.1",
     "react": "16.13.1",
