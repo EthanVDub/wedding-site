@@ -16,8 +16,9 @@ const RSVPButton = styled.button`
     color: white;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     margin-bottom: 5%;
+    padding: 0.5em 0.5em;
   }
 `;
 export default RSVPButton;

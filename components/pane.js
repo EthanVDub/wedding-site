@@ -23,6 +23,13 @@ const StyledPane = styled.div`
     letter-spacing: 0.2em;
   }
 
+    h2 {
+      margin: 10% auto 5% auto;
+      font-family: brandon-grotesque, "Brandon Grotesque", Futura, sans-serif;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
   .underline {
     margin: 0 auto;
     width: 60px;
@@ -111,6 +118,8 @@ const StyledSection = styled.div`
     }
   }
 
+
+
   input[type="checkbox"] {
     align-self: flex-start;
   }
@@ -126,7 +135,9 @@ const StyledLeftSection = styled.div`
     margin: 0 auto;
   }
 
-  
+  h1 {
+    margin: 20vh auto;
+  }
 `;
 
 const SectionItem = styled.div`
@@ -332,7 +343,11 @@ const Pane = () => {
           <StyledPane>
             <h1>RSVP</h1>
             <span className="underline"></span>
-            <h1>SUCCESS</h1>
+            
+            <h2>Thank you for responding!</h2>
+            <Link href="/">
+              <RSVPButton> HOME </RSVPButton>
+            </Link>
           </StyledPane>
         
       
