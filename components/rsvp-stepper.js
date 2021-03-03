@@ -5,29 +5,21 @@ import Pane from "./pane";
 const StyledRSVPStepper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-image: url(${bw});
 
+  background-image: url(${bw});
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
 
   height: 100vh;
+  overflow-y: scroll;
+  padding: 5% 0;
 `;
 
-const StyledItem = styled.div`
-  flex-grow: 4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
-
-const RSVPStepper = () => (
+ const RSVPStepper = () => (
   <StyledRSVPStepper>
-    <StyledItem>
-      <Pane />
-    </StyledItem>
+    <Pane />
   </StyledRSVPStepper>
 );
 

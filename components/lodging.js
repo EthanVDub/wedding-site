@@ -28,6 +28,7 @@ const StyledLodging = styled.div`
     flex-direction: column;
     img {
       margin: 0;
+      max-width:400px;
     }
   }
 `;

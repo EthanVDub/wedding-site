@@ -27,17 +27,7 @@ module.exports = async (req, res) => {
   const request = JSON.parse(req.body);
 
   console.log(request);
-  await collection.insertOne(
-      { 
-        "datetime" : moment().format(),  
-        "firstname" : request.firstname, 
-        "lastname" : request.lastname, 
-        "response" : request.response, 
-        "email" : request.email, 
-        "partysize" : parseInt(request.partysize), 
-        "dietary" : request.dietary,
-        "kid" : request.kid
-      });
+  await collection.insert(request);
 
   res.status(200).json({});
 }

@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import RSVPSectionButton from "./rsvp-section-button";
+import Link from "next/link";
 
 const StyledRSVP = styled.div`
   display: flex;
@@ -6,7 +8,7 @@ const StyledRSVP = styled.div`
   justify-content: center;
   text-align: center;
   background: #white;
-  padding: 5% 5%;
+  padding: 1% 5%;
   color: #333333;
   h1 {
     color: #ddb263;
@@ -26,6 +28,7 @@ const StyledRSVP = styled.div`
 
   p {
     font-size: 1.5em;
+    margin-bottom: 0;
     font-family: brandon-grotesque, "Brandon Grotesque", Futura, sans-serif;
     color: #333333;
   }
@@ -35,7 +38,10 @@ const RSVP = () => (
   <StyledRSVP>
     <h1>RSVP</h1>
     <span className="underline"></span>
-    <p>You will be able to RSVP through this site once we are ready!</p>
+    <p>Click here to RSVP!</p>
+    <Link href="/rsvp">
+      <RSVPSectionButton> RSVP </RSVPSectionButton>
+    </Link>
     <p className="byline"> Site designed and created by the Groom </p>
   </StyledRSVP>
 );
