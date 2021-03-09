@@ -60,11 +60,6 @@ const StyledInfo = styled.div`
 
   @media (max-width: 768px) {
     display: block;
-    background-image: url(${opacity});
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     
     img {
       display: none;
