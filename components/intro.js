@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Button from "./button";
 import Link from "next/link";
 import cute from "../static/Vertical.jpg";
+import opacity from "../static/opacity.png";
 
 const StyledIntro = styled.div`
   display: flex;
@@ -29,8 +30,6 @@ const StyledIntro = styled.div`
     position: static;
   }
 `;
-
-const StyledImage = styled.div``;
 
 const StyledInfo = styled.div`
   flex-grow: 1;
@@ -61,7 +60,12 @@ const StyledInfo = styled.div`
 
   @media (max-width: 768px) {
     display: block;
-
+    background-image: url(${opacity});
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     img {
       display: none;
     }
