@@ -12,7 +12,7 @@ const StyledRegistry = styled.div`
   @media (max-width: 768px) {
     justify-content: center;
     flex-direction: column;
-    margin: auto
+    margin: auto auto 5% auto;
   }
 `;
 
