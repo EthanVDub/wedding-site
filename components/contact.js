@@ -1,6 +1,10 @@
-import styled from "styled-components";
+import Underline from "./underline";
+
 import calendar from "../static/Calendar.png";
 import location from "../static/Location.png";
+
+import styled from "styled-components";
+
 
 const StyledContact = styled.div`
   display: flex;
@@ -8,9 +12,10 @@ const StyledContact = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-  background: #333333;
   padding-top: 0;
+  background: #333333;
   color: white;
+
   h1 {
     color: white;
     line-height: 1.2;
@@ -18,13 +23,6 @@ const StyledContact = styled.div`
     font-size: 3em;
     font-family: brandon-grotesque, "Brandon Grotesque", Futura, sans-serif;
     margin-bottom: 0.2em;
-  }
-  .underline {
-    align-self: center;
-    width: 60px;
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: #eabf8b;
   }
 `;
 
@@ -64,25 +62,16 @@ const StyledItem = styled.div`
   h1 {
     margin: 0;
   }
-
-  .underline {
-    display: flex;
-    width: 60px;
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: #eabf8b;
-    margin: auto;
-  }
 `;
 
 const Contact = () => (
   <StyledContact>
     <h1>CONTACT</h1>
-    <span className="underline"></span>
+    <Underline color={"#f4cf9f"}/>
     <StyledSection>
       <StyledItem>
         <h1>Bride</h1>
-        <span className="underline"></span>
+        <Underline color={"#f4cf9f"}/>
         <div className="contacts">
           <p>Delaney Schaffner</p>
           <p>309-738-8106</p>
@@ -95,7 +84,7 @@ const Contact = () => (
       </StyledItem>
       <StyledItem>
         <h1>Groom</h1>
-        <span className="underline"></span>
+        <Underline color={"#f4cf9f"}/>
         <div className="contacts">
           <p>Ethan Vander Wiel</p>
           <p>319-429-4908</p>

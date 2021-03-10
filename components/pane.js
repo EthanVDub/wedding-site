@@ -1,4 +1,6 @@
 import RSVPButton from "./rsvp-button";
+import Underline from "./underline";
+
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from 'next/router';
@@ -29,14 +31,6 @@ const StyledPane = styled.div`
       font-weight: 500;
       line-height: 1.2;
     }
-
-  .underline {
-    margin: 0 auto;
-    width: 60px;
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: #333333;
-  }
 
   .between {
     margin 3% auto;
@@ -117,8 +111,6 @@ const StyledSection = styled.div`
       margin: 0;
     }
   }
-
-
 
   input[type="checkbox"] {
     align-self: flex-start;
@@ -206,7 +198,7 @@ const Pane = () => {
     return (
           <StyledPane>
             <h1>RSVP</h1>
-            <span className="underline"></span>
+            <Underline color={"#333333"} />
             <StyledResponseBox>
               <p>Your email address:</p>
               <input
@@ -230,6 +222,7 @@ const Pane = () => {
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
+                <option value="6">6</option>
               </select>
             </StyledResponseBox>
             <RSVPButton onClick={() => {
@@ -330,7 +323,7 @@ const Pane = () => {
       
           <StyledPane>
             <h1>RSVP</h1>
-            <span className="underline"></span>
+            <Underline color={"#333333"} />
               {form}
               <RSVPButton onClick={() => submit()}> DONE </RSVPButton>
           </StyledPane>
@@ -342,7 +335,7 @@ const Pane = () => {
         
           <StyledPane>
             <h1>RSVP</h1>
-            <span className="underline"></span>
+            <Underline color={"#333333"} />
             
             <h2>Thank you for responding!</h2>
             <Link href="/">

@@ -23,11 +23,11 @@ const Main = () => (
     <section id="lodging">
       <Lodging />
     </section>
-    <section id="FAQ">
-      <Faq />
-    </section>
     <section id="registry">
       <Registry />
+    </section>
+    <section id="FAQ">
+      <Faq />
     </section>
     <section id="contact">
       <Contact />

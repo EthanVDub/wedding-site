@@ -26,7 +26,7 @@ const StyledItem = styled.div`
   font-family: brandon-grotesque, "Brandon Grotesque", Futura, sans-serif;
   letter-spacing: 0.2em;
   :hover {
-    color: #ddb263;
+    color: #f4cf9f;
   }
 `;
 

@@ -1,6 +1,9 @@
-import styled from "styled-components";
+import Underline from "./underline";
+
 import calendar from "../static/Calendar.png";
 import location from "../static/Location.png";
+
+import styled from "styled-components";
 
 const StyledDetails = styled.div`
   display: flex;
@@ -22,7 +25,7 @@ const StyledItem = styled.div`
   letter-spacing: 0.2em;
   text-align: center;
   h1 {
-    color: #ddb263;
+    color: #f4cf9f;
     line-height: 1.2;
     font-weight: 500;
     font-size: 3em;
@@ -46,15 +49,6 @@ const StyledItem = styled.div`
     height: 3.5em;
   }
 
-  .underline {
-    display: flex;
-    margin: auto;
-    width: 60px;
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: #333;
-  }
-
   @media (max-width: 768px) {
     padding: 1em 0;
   }
@@ -65,14 +59,14 @@ const Details = () => (
     <StyledItem>
       <img src={calendar} />
       <h1>WHEN</h1>
-      <span className="underline"></span>
+      <Underline color={"#333333"} />
       <h3>MAY 22, 2021</h3>
       <h2>A SATURDAY</h2>
     </StyledItem>
     <StyledItem>
       <img src={location} />
       <h1>WHERE</h1>
-      <span className="underline"></span>
+      <Underline color={"#333333"} />
       <h3>Cedar Falls, IA</h3>
       <h2>BIEN VENU EVENT CENTER</h2>
     </StyledItem>

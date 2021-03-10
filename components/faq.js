@@ -1,6 +1,9 @@
-import styled from "styled-components";
 import Button from "./button";
+import Underline from "./underline";
+
+import styled from "styled-components";
 import Link from "next/link";
+
 import { makeStyles } from "@material-ui/core/styles";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
@@ -24,7 +27,7 @@ const StyledFaq = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-  background: #f4c1bc;
+  background: #f9d6d2;
   padding: 5% 5%;
   color: white;
   h1 {
@@ -34,13 +37,6 @@ const StyledFaq = styled.div`
     font-size: 3em;
     font-family: brandon-grotesque, "Brandon Grotesque", Futura, sans-serif;
     margin: 0.2em;
-  }
-  .underline {
-    align-self: center;
-    width: 60px;
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: #ddb263;
   }
 `;
 
@@ -70,14 +66,6 @@ const StyledItem = styled.div`
     color: #333333;
   }
 
-  .underline {
-    align-self: center;
-    width: 60px;
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: white;
-  }
-
   h2 {
     line-height: 1.2;
     font-weight: 500;
@@ -93,7 +81,7 @@ const Faq = () => {
   return (
     <StyledFaq>
       <h1>FAQ</h1>
-      <span className="underline"></span>
+      <Underline color={"white"}/>
       <StyledItem>
         <StyledSection>
           <StyledItem>

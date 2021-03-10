@@ -11,6 +11,7 @@ const Button = styled.button`
   cursor: pointer;
   max-height: 50px;
   font-family: brandon-grotesque, "Brandon Grotesque", Futura, sans-serif;
+  
   :hover {
     background: white;
     color: #ddb263;

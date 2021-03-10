@@ -1,7 +1,11 @@
-import styled from "styled-components";
-import holiday from "../static/Holiday.jpg";
 import Button from "./button";
+import Underline from "./underline";
+
+import holiday from "../static/Holiday.jpg";
+
 import Link from "next/link";
+import styled from "styled-components";
+
 import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
@@ -13,7 +17,7 @@ const StyledLodging = styled.div`
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  background: #eabf8b;
+  background: #f4cf9f;
   padding: 0 10%;
   h1 {
     color: white;
@@ -40,21 +44,13 @@ const StyledDropDown = styled.div`
 const StyledItem = styled.div`
   flex-grow: 1;
   flex-basis: 0;
-
   margin: auto;
+  
   img {
     width: 60%;
     height: 60%;
     border-radius: 5%;
     margin: 10% 0%;
-  }
-  .underline {
-    display: flex;
-    margin: 0 auto;
-    width: 60px;
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: white;
   }
   p {
     margin-top: 0.5em;
@@ -68,12 +64,12 @@ const StyledItem = styled.div`
     text-align: left;
     font-size: 1em;
     font-family: brandon-grotesque, "Brandon Grotesque", Futura, sans-serif;
-    color: #eabf8b;
+    color: #f0bd7a;
     padding: 0;
   }
 
   .details {
-    color: #eabf8b;
+    color: #f0bd7a;
   }
   @media (max-width: 1100px) {
       h1 {
@@ -92,7 +88,7 @@ const Lodging = () => (
     </StyledItem>
     <StyledItem>
       <h1>LODGING</h1>
-      <span className="underline"></span>
+      <Underline />
       <p>
         We have a block of rooms at the Holiday Inn & Suites that is connected
         to the event center. Simply use the link below or call ahead and say
