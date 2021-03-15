@@ -8,7 +8,7 @@ const Rsvp = () => (
       <link rel="icon" href="../static/ring.ico" />
     </Head>
     <RSVPStepper>
-<style jsx global>{`
+      <style jsx global>{`
         body {
           margin: 0;
         }
