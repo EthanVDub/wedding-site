@@ -10,7 +10,6 @@ const StyledUnderline = styled.span`
 `
 
 const Underline = (props) => {
-    console.log(props);
     return <StyledUnderline color={props.color}/>;
 }
 
