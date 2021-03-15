@@ -3,7 +3,9 @@ import Head from "next/head";
 
 import { useRouter } from 'next/router';
 
+const dotenv = require('dotenv');
 
+dotenv.config();
 
 const StyledRsvpResults = styled.div`
     display: flex;
