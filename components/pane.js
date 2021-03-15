@@ -67,7 +67,7 @@ const StyledResponseBox = styled.div`
     border: 1px solid #cccccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 16;
+    font-size: 16px;
   }
 
   @media (max-width: 1200px) {
@@ -96,7 +96,7 @@ const StyledForm = styled.div`
     border: 1px solid #cccccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 16;
+    font-size: 16px;
   }
 `;
 
