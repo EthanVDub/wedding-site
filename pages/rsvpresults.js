@@ -19,7 +19,7 @@ const StyledResult = styled.div`
 `;
 
 export async function getStaticProps(context) {
-  const res = await fetch("http://localhost:3000/api/results-api");
+  const res = await fetch(process.env.BASE_URL + "/api/results-api");
   const json = await res.json();
   return {
     props: {

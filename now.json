@@ -3,6 +3,7 @@
     "version": 2,
     "env": {
       "MONGODB_URI": "@my-mongodb-uri-weddingrsvp",
-      "MONGODB_DB": "@my-mongodb-db-weddingrsvp"
+      "MONGODB_DB": "@my-mongodb-db-weddingrsvp",
+      "BASE_URL": "@my-base-url"
     }
 }
