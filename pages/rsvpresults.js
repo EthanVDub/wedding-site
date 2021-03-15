@@ -3,10 +3,6 @@ import Head from "next/head";
 
 import { useRouter } from 'next/router';
 
-const dotenv = require('dotenv');
-
-dotenv.config();
-
 const StyledRsvpResults = styled.div`
     display: flex;
     flex-direction: column;
@@ -21,7 +17,7 @@ const StyledResult = styled.div`
 `;
 
 export async function getStaticProps(context) {
-  const res = await fetch(process.env.BASE_URL + "/api/results-api");
+  const res = await fetch("https://ethananddelaney.com/api/results-api");
   const json = await res.json();
   return {
     props: {
