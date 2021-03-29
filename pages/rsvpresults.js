@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import Head from "next/head";
+import RSVPButton from "../components/rsvp-button";
 
 import { useRouter } from 'next/router';
+import { useState } from "react";
 
 const StyledRsvpResults = styled.div`
     display: flex;
@@ -16,20 +18,18 @@ const StyledResult = styled.div`
     border-bottom: 2px solid black;
 `;
 
-export async function getStaticProps(context) {
-  const res = await fetch(process.env.BASE_URL + "/api/results-api");
-  const json = await res.json();
-  return {
-    props: {
-      data: json,
-    },
-  };
-}
+const Rsvpresults = () => {
+    const [data, setData] = useState([]);
 
-const Rsvpresults = ({data}) => {
-    let form = []
+    const getResults = async () => {
+      const res = await fetch("/api/results-api");
+      const json = await res.json();
+      setData(json);
+    }
+
+    let form = [];
     
-    for (let i = 0; i < data.results.length; i++) {
+    for (let i = 0; i < data.results?.length; i++) {
         let firstname = data.results[i].firstname
         let lastname = data.results[i].lastname
         let response = data.results[i].response
@@ -56,12 +56,16 @@ const Rsvpresults = ({data}) => {
             <link rel="icon" href="../static/ring.ico" />
             </Head>
             <StyledRsvpResults>
-            <h1>Number of Responses: {data.results.length}</h1>
+            <RSVPButton onClick={() => {
+              getResults()
+            }}> Get Results </RSVPButton>
+            <h1>Number of Responses: {data.results?.length || 0}</h1>
             <style jsx global>{`
                 body {
                 margin: 0;
                 }
             `}</style>
+            
             {form}
             </StyledRsvpResults>
         </>
