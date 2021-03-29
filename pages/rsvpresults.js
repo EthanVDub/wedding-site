@@ -7,15 +7,24 @@ import { useState } from "react";
 
 const StyledRsvpResults = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+
+    @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 
 const StyledResult = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-basis: 29%;
     justify-content: space-around;
-    border-bottom: 2px solid black;
+    margin: 2%;
+    padding: 5%;
+    border: 2px solid #333333;
+    border-radius: 10%;
 `;
 
 const Rsvpresults = () => {
@@ -55,18 +64,20 @@ const Rsvpresults = () => {
             <title>E&D</title>
             <link rel="icon" href="../static/ring.ico" />
             </Head>
-            <StyledRsvpResults>
+            
+            <h1>Number of Responses: {data.results?.length || 0}</h1>
             <RSVPButton onClick={() => {
               getResults()
             }}> Get Results </RSVPButton>
-            <h1>Number of Responses: {data.results?.length || 0}</h1>
-            <style jsx global>{`
-                body {
-                margin: 0;
-                }
-            `}</style>
-            
-            {form}
+            <StyledRsvpResults>
+              
+              <style jsx global>{`
+                  body {
+                  margin: 0;
+                  }
+              `}</style>
+              
+              {form}
             </StyledRsvpResults>
         </>
     );
