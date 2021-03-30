@@ -9,8 +9,19 @@ import { useState } from "react";
 const StyledIntro = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   margin: 2% 5%;
+
+  select {
+    width: 10%;
+  }
+
+  @media (max-width: 1200px) {
+    select {
+     width: 90%;
+     font-size: 16px;
+    }
+  }
 `;
 
 const StyledRsvpResults = styled.div`
@@ -20,8 +31,8 @@ const StyledRsvpResults = styled.div`
     flex-wrap: wrap;
 
     @media (max-width: 1200px) {
-    flex-direction: column;
-  }
+      flex-direction: column;
+    }
 `;
 
 const StyledResult = styled.div`
@@ -111,28 +122,27 @@ const Rsvpresults = () => {
               <RSVPResultsButton onClick={() => {
                 getResults()
               }}> Get Results </RSVPResultsButton>
-              <label for="yesfilter">Responded yes:</label>
-              <input
-                type="checkbox"
-                id="yesfilter"
-                name="yesfilter"
-                autoComplete="off"
-                onChange={() => { 
-                  filterResults(!filterTypes[0], filterTypes[1], filterTypes[2], filterTypes[3])
-                  setFilterTypes([!filterTypes[0], filterTypes[1], filterTypes[2], filterTypes[3]])
-                }}
-              />
-              <label for="nofilter">Responded no:</label>
-              <input
-                type="checkbox"
-                id="nofilter"
-                name="nofilter"
-                autoComplete="off"
-                onChange={() => { 
-                  filterResults(filterTypes[0], !filterTypes[1], filterTypes[2], filterTypes[3])
-                  setFilterTypes([filterTypes[0], !filterTypes[1], filterTypes[2], filterTypes[3]])
-                }}
-              />
+              <label for="responsefilter">Responded:</label>
+              <select
+                id="responsefilter"
+                name="responsefilter"
+                onChange={() => {
+                    if(event.target.value == "all") {
+                      filterResults(false, false, filterTypes[2], filterTypes[3])
+                      setFilterTypes([false, false, filterTypes[2], filterTypes[3]])
+                    } else if(event.target.value == "yes") {
+                      filterResults(true, false, filterTypes[2], filterTypes[3])
+                      setFilterTypes([true, false, filterTypes[2], filterTypes[3]])
+                    } else if(event.target.value == "no") {
+                      filterResults(false, true, filterTypes[2], filterTypes[3])
+                      setFilterTypes([false, true, filterTypes[2], filterTypes[3]])
+                    }
+                  }}
+              >
+                <option value="all">All Results</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
               <label for="kidfilter">Is a kid:</label>
               <input
                 type="checkbox"
